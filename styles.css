@@ -249,6 +249,115 @@ header{
 }
 
 
+/* premium box  */
+
+.premiumcontainer{
+    font-family: 'Blinker', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    box-sizing: border-box;
+    margin: 0; 
+  
+}
+
+.cardbutton, .card-title, .cardmeta-info {
+    font-family: 'Blinker', sans-serif;
+  }
+  
+  .card-title {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 0.5em;
+    line-height: 1.1;
+  }
+  
+  .card-text, .cardmeta-info {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .card-text {
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  
+  .cardmeta-info {
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 18px;
+  }
+  
+  .span, .cardbutton {
+    font-weight: 700;
+  }
+  
+  span {
+    display: block;
+    font-size: 1.85em;
+  }
+  
+  .cardbutton {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 0.55em 2em;
+    color: #fff;
+    background-color:    #fd8434;
+  }
+  
+  .cardbutton:hover, .cardbutton:focus {
+    background-color: rgba(185, 75, 75, 0.6);
+  }
+  
+  
+  
+  /* Card Styles */
+  .card, .card-body, .cardcta {
+    display: flex;
+    
+  }
+  .card {
+    width: 95%;
+    margin-top: 25px;
+    height: 420px;
+    flex-direction: column;
+    background-color: rgb(90, 90, 90); 
+  }
+  
+  .card-header {
+  
+    
+    flex-basis: 60%;
+    object-fit: cover;
+    /* When using flex-basis on image, there is a bug in browsers (mostly Chrome) where flex-basis is not applied.*/
+    /* To fix it, min width and hight (or whichever is cousing you problems) need to be set to 0. */
+    min-width: 0;
+    min-height: 0;
+  }
+  
+  .card-body {
+    flex-basis: 60%;
+    padding: 2rem;
+    flex-direction: column;
+  }
+  
+  .cardcta {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+  }
+  
+  .cardcta p {
+    flex: 0;
+  }
+
+
+
+
+
 
 /* FAQ section starts here */
 .collapsible {
@@ -439,7 +548,9 @@ hr {
 
     /* footer section css  ends */
 
-     /* device specific responsive part starts */
+
+
+/* device specific responsive part starts */
 
 
 @media screen and (max-width: 1068px){
@@ -492,6 +603,9 @@ hr {
 }
 
 @media screen and (max-width: 767px){
+
+   
+      
 
     .nav-list-mobile{
         display: flex;
@@ -679,6 +793,8 @@ hr {
     .watch{
         background: url(images/hero/watch/watch_small.jpg);    
     }
+
+  
 
     .hero{
         height: 50rem;
