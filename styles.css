@@ -232,6 +232,8 @@ header{
 
 .title-dark{
     color: #000;
+        margin-bottom: 10px;
+
 
 }
 
@@ -376,6 +378,8 @@ header{
   .containercollapsible {
       margin-bottom: 30px;
       margin-top: 10px;
+          margin-right: 20px;
+    margin-left: 20px;
   }
   
  .active, .collapsible:hover {
